@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Criar conta - Meus hobbies</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            width: 100%;
+            height: 100vh;
+
+            /* IMAGEM DE FUNDO */
+            background-image: url("fundo\ pg\ inicial.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            border: 2px solid #168ee5;
+
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+
+        /* TÍTULO */
+
+        .titulo {
+            position: absolute;
+
+            top: 42px;
+            left: 95px;
+
+            font-size: 27px;
+            line-height: 1.05;
+
+            font-weight: normal;
+
+            color: #111;
+        }
+
+
+        /* ÁREA DO CADASTRO */
+
+        .cadastro {
+            position: absolute;
+
+            top: 45px;
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            width: 300px;
+
+            text-align: center;
+        }
+
+
+        /* TÍTULO DO FORMULÁRIO */
+
+        .cadastro h1 {
+            margin: 0 0 8px 0;
+
+            font-size: 20px;
+
+            font-style: italic;
+
+            font-weight: normal;
+        }
+
+
+        /* TEXTO */
+
+        .cadastro p {
+            margin: 0 0 20px 0;
+
+            font-size: 16px;
+
+            line-height: 18px;
+        }
+
+
+        /* CAMPOS */
+
+        .campo {
+            display: block;
+
+            width: 214px;
+            height: 29px;
+
+            margin: 0 auto 10px auto;
+
+            border: none;
+
+            background-color: rgba(205, 202, 201, 0.88);
+
+            padding: 5px 8px;
+
+            font-family: Georgia, "Times New Roman", serif;
+
+            font-size: 15px;
+
+            outline: none;
+        }
+
+
+        .campo::placeholder {
+            color: #222;
+
+            opacity: 1;
+        }
+
+
+        /* BOTÃO */
+
+        .cadastrar {
+            display: block;
+
+            width: 214px;
+            height: 30px;
+
+            margin: 5px auto 0 auto;
+
+            border: none;
+
+            background-color: rgba(187, 215, 240, 0.9);
+
+            font-family: Georgia, "Times New Roman", serif;
+
+            font-size: 16px;
+
+            cursor: pointer;
+        }
+
+
+        .cadastrar:hover {
+            background-color: rgba(170, 205, 235, 0.95);
+        }
+
+
+        /* TEXTO FINAL */
+
+        .login {
+            margin-top: 12px;
+
+            font-size: 12px;
+
+            line-height: 15px;
+        }
+
+
+        .login a {
+            color: #4d8bc5;
+
+            text-decoration: none;
+        }
+
+
+        .login a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- TÍTULO -->
+
+    <div class="titulo">
+        Meus<br>
+        hobbies
+    </div>
+
+
+
+    <!-- CADASTRO -->
+
+    <div class="cadastro">
+
+        <h1>
+            Crie sua conta!
+        </h1>
+
+
+        <p>
+            cadastre-se para conhecer<br>
+            meu mundo e descobrir meus<br>
+            hobbies!
+        </p>
+
+
+        <form>
+
+
+            <!-- NOME -->
+
+            <input
+                type="text"
+                class="campo"
+                placeholder="nome:"
+            >
+
+
+            <!-- SOBRENOME -->
+
+            <input
+                type="text"
+                class="campo"
+                placeholder="sobrenome:"
+            >
+
+
+            <!-- EMAIL -->
+
+            <input
+                type="email"
+                class="campo"
+                placeholder="email:"
+            >
+
+
+            <!-- DATA DE NASCIMENTO -->
+
+            <input
+                type="date"
+                class="campo"
+            >
+
+
+            <!-- USUÁRIO -->
+
+            <input
+                type="text"
+                class="campo"
+                placeholder="nome de usuário:"
+            >
+
+
+            <!-- SENHA -->
+
+            <input
+                type="password"
+                class="campo"
+                placeholder="senha:"
+            >
+
+
+            <!-- CONFIRMAR SENHA -->
+
+            <input
+                type="password"
+                class="campo"
+                placeholder="confirmar senha:"
+            >
+
+
+            <!-- BOTÃO -->
+
+            <button
+                type="submit"
+                class="cadastrar">
+
+                criar conta
+
+            </button>
+
+        </form>
+
+
+        <!-- VOLTAR PARA LOGIN -->
+
+        <div class="login">
+
+            já possui uma conta?<br>
+
+            <a href="index.html">
+                entrar
+            </a>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
